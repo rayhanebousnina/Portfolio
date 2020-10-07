@@ -1,0 +1,75 @@
+.nav{
+    display: flex;    
+    background-color: #292929;    
+    height: 50px;   ;
+    align-items: center;
+    padding-left: 10px;
+}
+
+a{
+    outline: none;
+    padding: 30px 30px;
+}
+
+a:link{
+    color: white;
+}    
+#image-couverture{
+    border-radius: 1px solid;
+    height: 500px;
+    width: 100%;
+}
+h1{
+    display: flex;
+    position: absolute;  
+    top: 30%;
+    bottom: 50%;  
+    left: 30%;
+    right: 50%;
+    border: 3px solid;   
+}
+section{
+    color: white;
+    padding-left: 10px;
+}
+#image-profil{
+    padding-top: 50px;    
+    padding-right: 50px;
+}
+.about{
+    display: flex;
+    justify-content: flex-end;
+}
+p{
+    padding-right: 50px;
+    padding-top: 50px;
+}
+button{    
+    background-color: rgb(73, 180, 73);
+    font-size: 20px;
+    float: right;
+    
+}
+.formation{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#logoesen{
+    height: 50px;
+    width: 50px;
+}
+#logoisima{
+    height: 50px;
+    width: 50px;
+}
+.projet{
+    display: flex;
+    justify-content: space-around;  
+    padding-bottom: 50px;  
+    padding-top: 30px;
+}
+h2{
+    padding: 50px;
+}
