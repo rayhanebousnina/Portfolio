@@ -4,6 +4,14 @@
     height: 50px;   ;
     align-items: center;
     padding-left: 10px;
+    justify-content: flex-end;
+}
+.separateur{
+    display: flex;    
+    background-color: #292929;    
+    height: 50px;   ;
+    align-items: center;
+    padding-left: 10px;
 }
 
 a{
@@ -11,7 +19,8 @@ a{
     padding: 30px 30px;
 }
 
-a:link{
+a:link, a:hover, a:visited{
+    outline: none;
     color: white;
 }    
 #image-couverture{
@@ -19,14 +28,13 @@ a:link{
     height: 500px;
     width: 100%;
 }
-h1{
-    
+h1{    
     position: absolute;  
-    top: 30%;
+    top: 20%;
     bottom: 50%;  
-    left: 30%;
+    left: 20%;
     right: 50%;
-    border: 3px solid;   
+    border: 5px solid ;   
 }
 section{
     color: white;
@@ -39,6 +47,7 @@ section{
 .about{
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 20px;
 }
 p{
     padding-right: 50px;
@@ -58,11 +67,13 @@ button{
 }
 #logoesen{
     height: 50px;
-    width: 50px;
+    width: 100px;
+    border: black solid 2px;
 }
 #logoisima{
     height: 50px;
-    width: 50px;
+    width: 100px;
+    border: black solid 2px;
 }
 .projet{
     display: flex;
@@ -71,9 +82,40 @@ button{
     padding-top: 30px;
 }
 h2{
-    padding: 50px;
+    padding: 30px;    
 }
-.compt{
+.bordure{
+    border-radius: 100px 30px/50px 40px;
+    background-color:rgb(243, 191, 245);
+}
+.format{
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.wrapping{
     display: flex;
+    justify-content: space-around;    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.footer{       
+    background-color: #292929;    
+    height: 150px;    
+    padding-left: 10px;    
+}
+.icons{
+    display: flex; 
+    padding-top: 50px;
     justify-content: space-around;
+}
+.button-submit:hover{
+    background-color: green;
+}
+.button-reset:hover{
+    background-color: red;
 }

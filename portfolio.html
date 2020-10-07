@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Porfolio-Rayhane</title>
 </head>
 <body>
@@ -18,65 +19,65 @@
     </div>
     
     <div id="accueil"> 
-        <h1>Je suis RAYHANE</h1>
+        <h1> Je suis RAYHANE <br> EMNA <br> BOUSNINA</h1>
         <img id="image-couverture" src="564.jpg" alt="work-img">         
     </div>
     <hr>
-    <div class="nav">
+    <div class="separateur">
         <section id="apropos">
             A propos         
         </section>                
     </div>
     <div class="about">
         <img id="image-profil" src="rayhane.jpeg" alt="photo-rayhane">
-        <p>
+        <p class="format">
             Rayhane Emna Bousnina, 25 ans, diplômée d'une licence fondamentale en Sciences de l'informatique <br> 
             suivi d'un mastère de recherche en Web Intelligence.
         </p>  
-        <p>
+        <p class="format">
             Ce portfolio a pour but de présenter mon parcours scolaire ainsi que mes compétences et mes projets <br>
             sur lesquels j'ai travaillé tout au long de mon parcours scolaire. <br>
-            Vous pouvez également visualiser mon CV et le télécharger. <br>
-            <button onclick="">Voir CV</button>
+            Vous pouvez également visualiser mon CV et le télécharger. <br><br><br>
+            <button onclick="https://github.com/rayhanebousnina/CVPRO.git">Voir CV</button>
         </p>      
     </div>
-    <div class="nav">
+    <div class="separateur">
         <section id="diplome">
             Diplômes et Formations        
         </section>                
     </div>
     <div class="formation">
         <img id="logoesen" src="logoesen.png" alt="logoesen">
-        <div>
+        <div class="format">
             Mastère de recherche en Web Intelligence
         </div>
         
-        <div>
+        <div class="format">
             De septembre 2017 à janvier 2020
         </div>
     </div>
     <hr>
     <div class="formation">
         <img id="logoisima" src="isima.jpg" alt="logoisima">
-        <div>
-            licence fondamentale en Sciences de l'informatique
+        <div class="format">
+            Licence fondamentale en Sciences de l'informatique
         </div>
         
-        <div>
+        <div class="format">
             De septembre 2014 à juillet 2017
         </div>
     </div>
-    <div class="nav">
+    <div class="separateur">
         <section id="experience">
             Expériences Professionnelles       
         </section>                
     </div>
     <div id="project">
-        <h2>Projet 1 : Querying a web of linked data, overview and experimentation</h2>
+        <h2  class="bordure">Projet 1 : Querying a web of linked data, overview and experimentation</h2>
      
         <div class="projet">
             <div>
-                Technologies:
+                <u class="format"> Technologies: </u>
                 <ul>
                     <li>RDF</li>
                     <li>SPARQL</li>
@@ -84,20 +85,20 @@
                 </ul>
             </div>
             <div>
-                Description: <br>
-                État de l'art sur le web sémantique et l’interrogation des données liées. <br>
-                Expérimentation sur le système d’interrogation SQUIN avec l'approche Link Traversal based Query Execution.
+                <u class="format"> Description: </u><br><br>
+                État de l'art sur le web sémantique et l’interrogation <br> des données liées. <br>
+                Expérimentation sur le système d’interrogation SQUIN <br> avec l'approche Link Traversal based Query Execution.
             </div>
             <div>
                 De février 2019 à janvier 2020
             </div>
         </div> 
         <hr>
-        <h2>Projet 2 : Mise en place d'un système de réservation des locaux</h2>
+        <h2  class="bordure">Projet 2 : Mise en place d'un système de réservation des locaux</h2>
         </div>   
         <div class="projet">
             <div>
-                Technologies:
+                <u class="format"> Technologies: </u>
                 <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -107,27 +108,77 @@
                 </ul>
             </div>
             <div>
-                Description:
-                Conception et réalisation d'une application web de réservation des locaux en ligne .
+                <u class="format"> Description: </u><br><br>
+                Conception et réalisation d'une application web <br> de réservation des locaux en ligne .
             </div>
             <div>
                 D'avril 2017 à juillet 2017
             </div>
         </div> 
-        <div class="nav">
+        <div class="separateur">
             <section id="competence">
                 Compétences Techniques       
             </section>                
         </div>  
-        <div>
-            <progress id="HTML5" value="70" max="100"></progress><br>
-            <label for="HTML5">HTML5</label><br>
-            <progress id="CSS3" value="70" max="100"></progress><br>
-            <label for="CSS3">CSS3</label><br>
-            <progress id="PHP7" value="60" max="100"></progress><br>
-            <label for="PHP7">PHP7</label><br>
-
-        </div>   
+        <table class="wrapping">
+            <tr>    
+                <td><progress id="HTML5" value="70" max="100"></progress></td>                
+                <td><progress id="CSS3" value="70" max="100"></progress></td>
+                <td><progress id="PHP7" value="60" max="100"></progress></td>
+                <td><progress id="Bootstrap" value="60" max="100"></progress></td>
+                <td><progress id="SQL" value="60" max="100"></progress></td>
+                <td><progress id="Java" value="50" max="100"></progress></td>                
+            </tr>
+            <tr>
+                <td><label for="HTML5">HTML5</label></td>
+                <td><label for="CSS3">CSS3</label></td>
+                <td><label for="PHP7">PHP7</label></td>
+                <td><label for="Bootstrap">Bootstrap</label></td>
+                <td><label for="SQL">SQL</label></td>
+                <td><label for="Java">Java</label></td>
+            </tr>   
+        </table>  
+        <div class="separateur">
+            <section id="contact">
+                Contact       
+            </section>                
+        </div> 
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Contactez-moi</legend>
+                <table class="table">
+                    <tr>
+                        <td><label for="nom">Nom</label></td>
+                        <td><input type="text" id="nom"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prenom">Prénom</label></td>
+                        <td><input type="text" id="prenom"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subject">Sujet</label></td>
+                        <td><input type="text" id="subject"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Message">Message</label></td>
+                        <td><textarea name="Message" id="Message" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="submit"></label></td>
+                        <td><input  class="button-submit" type="submit" value="Envoyer"></td>                                 
+                        <td><label for="reset"></label></td>
+                        <td><input  class="button-reset" type="reset" value="Annuler"></td>
+                    </tr> 
+                </table>
+            </fieldset>                        
+        </form>
+        <div  class="footer">
+            <div class="icons">
+                <i class="fab fa-linkedin-in" style="font-size: 30px; color: blue;" onclick="https://www.linkedin.com/in/rayhane-emna-bousnina-675566153/"> rayhane emna bousnina</i>
+                <i class="fas fa-phone" style="font-size: 30px; color: green;"> 24 135 775</i>
+                <i class="far fa-envelope" style="font-size: 30px; color: red;"> rayhaneemna@gmail.com</i>
+            </div>            
+        </div>
         
 
         
