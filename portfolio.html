@@ -9,19 +9,21 @@
     <title>Porfolio-Rayhane</title>
 </head>
 <body>
+    <!--navbar-->
     <div class="nav">
-        <a href="#accueil">Accueil </a> 
-        <a href="#apropos">A propos </a> 
-        <a href="#diplome">Diplômes </a> 
-        <a href="#experience">Projets </a> 
-        <a href="#competence">Compétences </a> 
-        <a href="#contact">Contact</a>
+        <a class="navette" href="#accueil">Accueil </a> 
+        <a class="navette" href="#apropos">A propos </a> 
+        <a class="navette" href="#diplome">Diplômes </a> 
+        <a class="navette" href="#experience">Projets </a> 
+        <a class="navette" href="#competence">Compétences </a> 
+        <a class="navette" href="#contact">Contact</a>
     </div>
-    
+    <!--accueil du portfolio-->
     <div id="accueil"> 
         <h1> Je suis RAYHANE <br> EMNA <br> BOUSNINA</h1>
         <img id="image-couverture" src="564.jpg" alt="work-img">         
     </div>
+    <!--la partie à propos-->
     <hr>
     <div class="separateur">
         <section id="apropos">
@@ -38,9 +40,12 @@
             Ce portfolio a pour but de présenter mon parcours scolaire ainsi que mes compétences et mes projets <br>
             sur lesquels j'ai travaillé tout au long de mon parcours scolaire. <br>
             Vous pouvez également visualiser mon CV et le télécharger. <br><br><br>
-            <button onclick="https://github.com/rayhanebousnina/CVPRO.git">Voir CV</button>
+            <form method="POST" action="https://github.com/rayhanebousnina/CVPRO.git" id="cv">
+                <input type="submit" name="cv" value="Voir CV" id="button">
+            </form>            
         </p>      
     </div>
+    <!--la partie diplômes et formations-->
     <div class="separateur">
         <section id="diplome">
             Diplômes et Formations        
@@ -67,6 +72,7 @@
             De septembre 2014 à juillet 2017
         </div>
     </div>
+    <!--la partie expérieces professionnelles-->
     <div class="separateur">
         <section id="experience">
             Expériences Professionnelles       
@@ -115,6 +121,7 @@
                 D'avril 2017 à juillet 2017
             </div>
         </div> 
+        <!--la partie compétences techniques-->
         <div class="separateur">
             <section id="competence">
                 Compétences Techniques       
@@ -138,13 +145,14 @@
                 <td><label for="Java">Java</label></td>
             </tr>   
         </table>  
+        <!--contact du portfolio-->
         <div class="separateur">
             <section id="contact">
                 Contact       
             </section>                
         </div> 
         <form action="" method="GET">
-            <fieldset>
+            <fieldset> 
                 <legend>Contactez-moi</legend>
                 <table class="table">
                     <tr>
@@ -172,17 +180,24 @@
                 </table>
             </fieldset>                        
         </form>
+        <!--footer-->
         <div  class="footer">
-            <div class="icons">
-                <i class="fab fa-linkedin-in" style="font-size: 30px; color: blue;" onclick="https://www.linkedin.com/in/rayhane-emna-bousnina-675566153/"> rayhane emna bousnina</i>
-                <i class="fas fa-phone" style="font-size: 30px; color: green;"> 24 135 775</i>
-                <i class="far fa-envelope" style="font-size: 30px; color: red;"> rayhaneemna@gmail.com</i>
-            </div>            
-        </div>
-        
+            <div class="grid-container">
+                <div class="item1">
+                    <i class="fas fa-phone"> 24 135 775</i><br>
+                    <pre class="adress">Adresse : Boumhel Ben Arous, Tunisie.</pre> 
+                </div>
+                <div class="item2">
 
-        
+                </div>
+                <div class="item3">
+                    <i class="far fa-envelope"> rayhaneemna@gmail.com</i><br>
+                    <a href="https://www.linkedin.com/in/rayhane-emna-bousnina-675566153/"><i class="fab fa-linkedin-in"> rayhane emna bousnina</i></a> 
+                </div>
+            </div>            
+        </div>      
+
     </div>
-    
+    <!--fin de page-->
 </body>
 </html>

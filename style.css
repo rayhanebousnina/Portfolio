@@ -13,13 +13,15 @@
     align-items: center;
     padding-left: 10px;
 }
-
-a{
-    outline: none;
+.navette{
+    text-decoration: none;
     padding: 30px 30px;
 }
-
-a:link, a:hover, a:visited{
+.navette:hover{
+    outline: none;
+    background-color: paleturquoise;
+}
+.navette:link, .navette:visited{
     outline: none;
     color: white;
 }    
@@ -43,6 +45,8 @@ section{
 #image-profil{
     padding-top: 50px;    
     padding-right: 50px;
+    padding-left: 15px;
+    width: 400px;
 }
 .about{
     display: flex;
@@ -53,11 +57,11 @@ p{
     padding-right: 50px;
     padding-top: 50px;
 }
-button{    
-    background-color: rgb(73, 180, 73);
+#cv{    
+    border: blue;
     font-size: 20px;
     float: right;
-    
+    padding-top: 100px;    
 }
 .formation{
     display: flex;
@@ -86,7 +90,7 @@ h2{
 }
 .bordure{
     border-radius: 100px 30px/50px 40px;
-    background-color:rgb(243, 191, 245);
+    background-color: paleturquoise
 }
 .format{
     font-weight: bold;
@@ -101,21 +105,47 @@ h2{
 .table{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.footer{       
+.footer{   
+    display: flex;   
+    justify-items: center; 
     background-color: #292929;    
     height: 150px;    
-    padding-left: 10px;    
+    padding-left: 10px;      
 }
-.icons{
-    display: flex; 
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 50px;
-    justify-content: space-around;
 }
-.button-submit:hover{
-    background-color: green;
+.item1{
+    grid-column: 1/2;
+    color: paleturquoise;
+    font-weight: bold;
+    font-size: larger;
 }
-.button-reset:hover{
-    background-color: red;
+.item2{
+    grid-column: 2/3;
+}
+.item3{
+    grid-column: 3/4;
+    color: paleturquoise;
+    font-weight: bold;
+    font-size: larger;
+    float: right;
+}
+.adress{
+    color: paleturquoise;
+    font-weight: bold;
+    font-size: larger;
+}
+i{
+    color: paleturquoise;
+    font-weight: bold;
+    font-size: larger;
+}
+body{
+    background-color: papayawhip;
 }
