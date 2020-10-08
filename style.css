@@ -5,6 +5,10 @@
     align-items: center;
     padding-left: 10px;
     justify-content: flex-end;
+    position: -webkit-sticky;    
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .separateur{
     display: flex;    
@@ -18,11 +22,14 @@
     padding: 30px 30px;
 }
 .navette:hover{
-    outline: none;
-    background-color: paleturquoise;
+    color: black;
+    background-color: paleturquoise;    
 }
-.navette:link, .navette:visited{
-    outline: none;
+.nav a:hover{color: #000;}
+.navette:visited{
+    color: white;
+}
+.navette:link{
     color: white;
 }    
 #image-couverture{
@@ -70,13 +77,13 @@ p{
     padding-bottom: 50px;
 }
 #logoesen{
-    height: 50px;
-    width: 100px;
+    height: 80px;
+    width: 150px;
     border: black solid 2px;
 }
 #logoisima{
-    height: 50px;
-    width: 100px;
+    height: 80px;
+    width: 150px;
     border: black solid 2px;
 }
 .projet{
@@ -93,6 +100,7 @@ h2{
     background-color: paleturquoise
 }
 .format{
+    margin-top: 50px;
     font-weight: bold;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
@@ -147,5 +155,8 @@ i{
     font-size: larger;
 }
 body{
-    background-color: papayawhip;
+    background-color: white;
+}
+ a button:hover{
+    background-color: yellowgreen;
 }
