@@ -157,6 +157,21 @@ i{
 body{
     background-color: white;
 }
- a button:hover{
-    background-color: yellowgreen;
+.button{
+    background-color: white;
+    border-radius: 12px;
+    width: 130px;
+    height: 60px;
+    color: black;
+    font-size: 1.3em;
+}   
+
+.btn:hover{
+    background-color: yellow;
+    color: black;
+    width: 120px;
+    border-radius: 12px;
+    height: 20px;
+  
+    box-shadow: 5px 5px #888888;
 }
